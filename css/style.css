@@ -32,10 +32,11 @@
 }
 @font-face {
     font-family: OctoberCrow; /* Гарнитура шрифта */
-    src: url(19659.ttf); /* Путь к файлу со шрифтом */
+    src: url(main.ttf); /* Путь к файлу со шрифтом */
    }
 *{
-    font-family: OctoberCrow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15pt;
 }
 body{
     background-color: rgb(37, 37, 37);

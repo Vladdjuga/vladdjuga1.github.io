@@ -11,28 +11,51 @@
 </head>
 
 <body>
-    <div class="my-div">
-        <form class="form text-light">
-            <img src="images/logo1.png" width="30" height="30" class="d-inline-block align-top logo" alt="">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="card-dark">
+                <div class="card-body">
+                    <form class="form text-light">
+                        <img src="images/logo1.png" width="30" height="30" class="d-inline-block align-top logo" alt="">
 
-            <div class="form-group">
-                <label for="exampleInputEmail1"><span>Login</span></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">Required*</small>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"><span class="my-btn">Login</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">Required*</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="mt-25 my-btn">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <small id="emailHelp" class="form-text text-muted">Required*</small>
+                        </div>
+                        <div class="form-group form-check row"  style="padding:0">
+                            <a href="#" id="myA" onclick="myFunc()" class="col a-forgt-pass rmbr-me">Remember
+                                me</a>
+                            <a href="#" class="col a-forgt-pass">Forgot password</a>
+                        </div>
+                    </form>
+                    <button type="submit" onclick="loginSubmit()" class="btn my-btn">GO!</button>
+                </div>
             </div>
-            <div class="form-group ">
-                <label for="exampleInputPassword1" class="mt-25">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-                <small id="emailHelp" class="form-text text-muted">Required*</small>
-            </div>
-            <div class="form-group form-check mt-25">
-                <input type="checkbox" class="form-check-input mt-25-rm" id="exampleCheck1">
-                <label class="form-check-label mt-25-rm" for="exampleCheck1">Remember me</label>
-                <a href="#" class="a-forgt-pass mt-25-rm">Forgot password</a>
-            </div>
-        </form>
-        <button type="submit" class="btn my-btn">GO!</button>
+        </div>
     </div>
+    <script>
+        function myFunc() {
+            if (document.getElementById("myA").style.textDecorationLine != "line-through") {
+                document.getElementById("myA").style.textDecorationLine = "line-through";
+            }
+            else {
+                document.getElementById("myA").style.textDecorationLine = "none";
+            }
+        }
+        function loginSubmit() {
+            var el1 = document.getElementById("exampleInputEmail1").value;
+            var el2 = document.getElementById("exampleInputPassword1").value;
+            if (el1 == "admin" && el2 == "1")
+                document.location.replace("profile.html");
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

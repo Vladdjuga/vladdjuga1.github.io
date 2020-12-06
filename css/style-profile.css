@@ -1,0 +1,144 @@
+.div-avatar-profile{
+    background-image: url(../images/profile-img.jpg);
+    width: 40%;
+    height: 40%;
+    background-size: cover;
+}
+html,body{
+    height: 100%;
+}
+.prof-img-blur{
+    -webkit-backdrop-filter: blur(15px);
+     backdrop-filter: blur(15px);   
+}
+.prof-img{
+    background-image: url(../images/profile-wall-1.jpg);
+    background-size: cover;
+}
+.jumb-profile{
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+.jumb-profile>.container>*{
+    background-color: rgba(56, 56, 56, 0.726);
+    padding: 1%;
+    -webkit-backdrop-filter: blur(20px);
+     backdrop-filter: blur(20px);   
+}
+.img-profile{
+    max-height: 200px;
+    max-width: 200px;
+}
+.profile-bio{
+    opacity: 0.5;
+}
+.curr-level{
+    border: 2px solid rgb(255, 111, 111);
+    border-radius: 50%;
+    padding: 1.5%;
+}
+.nearly-activity{
+    margin-top: 4%;
+}
+.div-short-profile-info>*{
+    margin: 0.5%;
+}
+.profile-activity{
+    margin-top: 0.5%;
+}
+.hours-nearly-activity{
+    float: right;
+}
+.game-info-profile>*{
+    font-size: 11pt;
+}
+.p-right-float{
+    float: right;   
+    margin-right: 5%;
+}
+.list-games-item{
+    width: 100%;
+}
+.nearly-activity-h4{
+    float: left;
+}
+.list-games-item{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56, 56, 56, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+    margin: 0;
+    margin-bottom: 4.5%;
+}
+.col-player-information{
+    background-color: rgba( 0, 0, 0, 0.3 );
+    padding: 1%;
+}
+.in-web-h3{
+    color: rgb(121, 226, 226);
+}
+.count-span{
+    font-size: 9pt;
+    opacity: 0.5;
+}
+.a-for-profile{
+    text-decoration: none;
+    color: white;
+}
+.a-for-profile:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+.col-player-inf-list{
+    list-style-type: none;
+    padding-left: 5%;
+}
+.col-player-inf-list>*{
+    margin-bottom: 3%;
+}
+.col-player-inf-friends{
+    list-style-type: none;  
+    padding-left: 5%;
+}
+.small-img-friend{
+    max-width: 46px;
+    max-height: 46px;
+    margin-right: 3%;
+}
+.player-inf-friends-list-item>img{
+    float: left;
+}
+.online{
+    color: rgb(121, 226, 226);
+}
+.in-web-span{
+    font-size: 7pt;
+}
+.friend-nickname{
+    font-size: 11pt;
+    width: fit-content;
+}
+.friend-lvl{
+    float: right;
+}
+.friend-inf{
+    overflow: hidden;
+    margin: 0;
+    margin: 2% 0%;
+}
+.offline{
+    opacity: 0.5;
+}
+.lvl-yellow{
+    border: 2px solid rgb(206, 180, 63);
+}
+.input-comm{
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    border: none;
+    width: 100%;
+    resize: none;
+}
+.footer-mg-10{
+    margin-top: 7.87%;
+}
